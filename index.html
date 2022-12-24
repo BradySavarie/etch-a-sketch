@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Etch-a-Sketch</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js" defer></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="content">
+                <div class="top">
+                    <div class="header">
+                        <h2 id="subtitle">MAGIC</h2>
+                        <h1 id="title">Etch-a-Sketch</h1>
+                        <h2 id="subtitle">SCREEN</h2>
+                    </div>
+                    <div class="gridsize">
+                        <label for="gridsizeslider" id="gridsizelabel">Grid Size: 50 x 50</label>
+                        <input name="gridsizeslider" id="gridsizeslider" type="range" min="1" max="100" value="50">
+                    </div>
+                </div>
+                <div class="middle">
+                    <div class="left">
+                        <input type="color" class="colorselector">
+                        <button class="colormode">Color Mode</button>
+                    </div>
+                    <div class="grid"></div>
+                    <div class="right">
+                        <button class="eraser">Eraser</button>
+                        <button class="rainbowmode">Rainbow Mode</button>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <button class="shake">Shake</button>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

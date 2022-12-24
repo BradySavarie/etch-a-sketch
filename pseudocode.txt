@@ -1,0 +1,20 @@
+the first thing I need to do is identify a method to create a 16x16 grid of square divs using DOM manipulation and flexbox
+
+reduce the problem to it's simplest form
+A single square div will fit inside a container that has locked square dimensions
+if I change the dimensions of the div to half of the container and double the quantity, then multiply the quantity of existing divs by itself than I will have a 2x2 grid that fits perfectly within the container
+if I change the dimensions of the div to a third of the continer and triple the quantity, then mulitply the quantity of existing divs by itself o will have a 3x3 grid that fits perfectly within the container
+continue above thought for any number of containers
+is there a way to have the dimensions automatically adjust rather than make an equation do it?
+If I can have a single variable between 1-100 that is user generated, I can plug it in to a formula to determine the quantity multiplier/size divider
+
+once i have that logic sorted it, i need to add hover functionality
+eventlistener senses when a mouse hovers over any div within the container and changes the background color of that div to black.
+queryselectall divs, create a nodelist with them, iterate through each object in the nodelist and attach the eventlistener to it. 
+run a mousehover function as the callback
+additional features can be added from there, but that is the main idea
+
+Start with div that is the size of the container
+Create new div
+
+
