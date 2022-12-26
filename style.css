@@ -107,6 +107,27 @@ input[type=range]::-webkit-slider-thumb {
     align-items: center;
  }
 
+ #colorselectorlabel {
+    color: rgb(243, 243, 243);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+ }
+
+#colorselectorinput {
+    cursor: pointer;
+    width: 90px;
+    height: 37px;
+    background: transparent;
+    border: none;
+}
+
+#colorselectorinput::-webkit-color-swatch {
+    border-radius: 10px;
+    border: 3px solid rgb(243, 243, 243);
+    box-shadow: 1px 1px 2px #000031;
+}
+
  .colormode, .rainbowmode {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -125,13 +146,38 @@ input[type=range]::-webkit-slider-thumb {
  .grid {
     border: 10px solid rgb(243, 243, 243);
     border-radius: 5px;
+    box-shadow: inset 1px 1px 1px #000031;
     background: white;
     margin: 25px 15px;
     height: 500px;
     width: 500px;
 }
 
- .bottom {
+#eraser {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #000031;
+    border: none;
+    cursor: pointer;
+    background: white;
+    padding: 5px 25px;
+}
+
+ #shakebutton {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #000031;
+    border: none;
+    cursor: pointer;
+    background: white;
+    padding: 5px 25px;
+    margin-top: -10px;
  }
 
 
