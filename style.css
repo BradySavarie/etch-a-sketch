@@ -13,26 +13,33 @@ body {
 }
 
 .container {
+    padding: 50px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: #25a8e074;
+    background: hsl(198, 75%, 70%);
 }
 
 .content {
     border-radius: 25px;
-    box-shadow: 0 0 1rem #ffffff;
+    box-shadow: 1px 1px 2px #000031;
     background: #DB1E35;
-    padding: 20px 200px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
 
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .header {
-    background: #DB1E35;
+    background: transparent;
     color: #FFC21C;
     display: flex;
     justify-content: center;
@@ -40,22 +47,92 @@ body {
     gap: 25px;
 }
 
-#subtitle {
-    font-style: italic;
-}
-
 #title {
     font-family: 'Galada', cursive;
     font-size: 3.5em;
 }
 
-.grid {
+#subtitle {
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.gridsize {
+    margin: -10px 0px;
+    color: rgb(243, 243, 243);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+input[type=range] {
+    height: 26px;
+    width: 250px;
+    -webkit-appearance: none;
+    background: transparent;
+  }
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 7px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000;
+    background: #FFC21C;
+    border-radius: 7px;
+  }
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 2px #000031;
+    height: 20px;
+    width: 20px;
+    border-radius: 26px;
+    background: #FFC21C;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7px;
+  }
+
+ .middle {
+    display: flex;
+    align-items: bottom;
+ }
+
+ .left, .right {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+ }
+
+ .colormode, .rainbowmode {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    background: white;
+    box-shadow: 1px 1px 2px #000031;
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+    margin: 25px 0px;
+ }
+
+ .grid {
     border: 10px solid rgb(243, 243, 243);
     border-radius: 5px;
     background: white;
+    margin: 25px 15px;
     height: 500px;
     width: 500px;
 }
+
+ .bottom {
+ }
 
 
 
