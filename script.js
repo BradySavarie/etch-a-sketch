@@ -1,22 +1,40 @@
-// Started by setting up input range slider that stores a value between 1-100, defaulting to 50
 const gridSize = document.getElementById('gridsizeslider');
+const grid = document.getElementById('grid');
+populateGrid(gridSize);
 
-// Update gridSize value and text content of label on change
+// Update gridSize value on change
 gridSize.addEventListener('change', function() {
     gridSize.setAttribute('value', gridSize.value);
+    populateGrid(gridSize);
 });
 // Replace text content of grid size label on input update
 gridSize.addEventListener('input', function() {
     document.getElementById('gridsizelabel').textContent = `Grid Size: ${gridSize.value} x ${gridSize.value}`;
 });
 
-// Once I have that functioning I need to rework my HTML to include the remaining features that I want included in this app
+// Create cells based on gridSize and append to grid
+function populateGrid(gridSize) {
+    clearGrid();
+    for (let i = 1; i <= gridSize.value; i++) {
+        const row = document.createElement('div');
+        grid.appendChild(row);
 
-// color mode button on the bottom left. this is the default behaviour. It should have a color picker input above it
-//
+        for (let j = 1; j <= gridSize.value; j++) {
+            const cell = document.createElement('div');
+            cell.setAttribute('id', 'cell');
+            const height = grid.clientHeight;
+            const width = grid.clientWidth;
+            cell.style.width = `${width / gridSize.value}px`;
+            cell.style.height = `${height / gridSize.value}px`;
+            cell.style.border = "1px solid black";
+            row.appendChild(cell);
+        }
+    }
+}
+
+function clearGrid() {
+    grid.innerHTML = "";
+}
 
 
-
-// Remaining features are a color mode with a color selector of some sort, a "rainbow" mode (think of a cool variation on this concept), a "shake" button to clear the divs, and an eraser. MAYBE a shading option with adjustable opacity values per pass
-// After that I can use the gridSize variable to create the actual divs
 // once the divs are hooked up i will add in the click listener functionality to change background color. I think the best route forward is for the colors to change when the mouse is clicked down and once released the functionality ends (?). hover is too frustrating to control. 
