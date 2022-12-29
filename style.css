@@ -139,7 +139,6 @@ input[type=range]::-webkit-slider-thumb {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 1.25em;
-    color: #333;
     cursor: pointer;
  }
 
@@ -151,10 +150,10 @@ input[type=range]::-webkit-slider-thumb {
     box-shadow: inset 1px 1px 1px #000031;
     border: 10px solid rgb(243, 243, 243);
     border-radius: 5px;
-    display: flex;
+    display: grid;
 }
 
-.cell {
+#cell {
     border: 1px solid black;
 }
 
@@ -167,7 +166,6 @@ input[type=range]::-webkit-slider-thumb {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 1em;
-    color: #333;
     cursor: pointer;
 }
 
@@ -181,12 +179,13 @@ input[type=range]::-webkit-slider-thumb {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 1em;
-    color: #333;
     cursor: pointer;
  }
 
+ .active {
+    color: #FFC21C;
+ }
 
-
-
-
-
+ button {
+    color: #333;
+ }
