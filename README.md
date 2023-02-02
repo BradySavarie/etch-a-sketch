@@ -1,4 +1,6 @@
-# etch-a-sketch
+# Etch-a-Sketch
+
+View project live at: https://bradysavarie.github.io/etch-a-sketch/
 
 This etch-a-sketch app was the second project that i've created since learning to program, and the main goal was to improve my DOM manipulation skills. It definitely helped me get a handle on modifying html elements via javascript, and I also learned how important planning is to the programming workflow. I started writing the script before I had a solid idea of how all of the features were going to work together, and while I did manage to make it work the result was a difficult to read, tough to maintain program. Once I realized this I did more research and ended up reverse-engineering another persons code. It was broken down in a way that made alot more sense and would make it significantly easier to add additional features or make any changes, so I decided to completely revamp my own using those same concepts. The next project I make I intend on staying in the planning phase longer (maybe even trying out flow charts) so that I can avoid writing myself into a corner again.
 
